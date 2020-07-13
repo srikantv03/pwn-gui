@@ -29,4 +29,18 @@ Before the connection is made, you will be asked to define a function named "ret
 
 In this function, you will have to return whatever value you want to send back through the socket (it will be converted before it is sent)
 
+## Coming Soon
 
+Currently working on the following features:
+ 
+- Python shell functionality
+
+With basic python shell functionality in this gui, this gui can act as an all in one hub for testing and injecting code into ctf challenge servers
+
+- Combinantion (injection and interactive) mode
+
+This will allow you to test string inputs as well as send cached code outputs directly to the server
+
+- Flag Detection
+
+Using the tools given with the pwn library, this gui will have flag detection at the user's fingertips, allowing them to recursively search for the flag string at the click of a buttton.
