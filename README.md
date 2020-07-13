@@ -3,20 +3,12 @@
 Graphical user interface for the pwn tools library.
 
 ## How to install
+Run the following command into your command line to install:
 
-Paste the following code into a shell script (.sh file):
 ```
-git clone http://github.com/treecant/pwn-gui.git
-sudo apt install python3-pip
-pip3 install pwn
-cd pwn-gui
-python3 main.py
+sh <(wget -qO- https://raw.githubusercontent.com/treecant/pwn-gui/master/init.sh)
 ```
-To run the script, paste the following code in the terminal 
-```
-chmod +x <script name>
-./<script name>
-```
+
 If you already have any of the dependencies that are being installed in the script, you won't run into errors by attempting to "reinstall" them through the script
 
 ## How to use

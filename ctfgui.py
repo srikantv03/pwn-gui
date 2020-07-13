@@ -40,11 +40,8 @@ def setup():
 	return True
 
 	
-def conn_and_exec(hostname, port):
-	try:
-		r = remote(hostname, port)
-	except: 
-		print("Something went wrong! Check your hostname and port number...")
+def conn_and_exec(hostname, port, r):
+
 
 
 	try:
@@ -52,18 +49,11 @@ def conn_and_exec(hostname, port):
 	except:
 		print("Something went wrong")
 
-
-	def return_value():
-		return "bloodibloo"
-		
-	r.send(return_value().encode('utf-8'))
-
 	try:
 		print(r.recv().decode())
-		r.interactive()
 	except:
 		print("Something went wrong")
 		
-	print(r.recv().decode())
+
 	
 
